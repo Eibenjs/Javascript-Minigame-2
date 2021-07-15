@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+}
+
+body {
+  background: #303030;
+}
+
+.container {
+  width: 50vh;
+  aspect-ratio: 3/5;
+  background-color: #303030;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 506 683*/
+.bottom-place {
+  width: 100%;
+  height: 15vh;
+  position: absolute;
+  top: 70%;
+  border-top: 0.5vh solid #fff;
+  border-bottom: 0.5vh solid #fff;
+}
+
+.slide-game {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.letter {
+  color: #fff;
+  position: relative;
+  bottom: 10vh;
+  font-size: 10vh;
+}
+
+.letter-anim {
+  animation: top-to-bot 1.5s linear;
+}
+
+.life-place, .win-place {
+  padding: 2vh;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.win-place {
+  margin-top: 1.5vh;
+}
+
+.life-place div, .win-place div {
+  border-radius: 100%;
+  margin: 1vh;
+  width: 4vh;
+  aspect-ratio: 1/1;
+}
+
+.life-place div {
+  border: .4vh solid red;
+}
+
+.win-place div {
+  border: .4vh solid #35eb0c;
+}
+
+.life-place {
+  top: 93%;
+}
+
+.win-place {
+  top: 98%;
+}
+
+
+@keyframes top-to-bot {
+  0% {
+    bottom: 10vh;
+  }
+  100% {
+    bottom: -80vh;
+  }
+}
