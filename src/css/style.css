@@ -8,16 +8,26 @@
 
 body {
   background: #303030;
+  /* font-family: 'Roboto Mono', monospace; */
 }
 
-.container {
-  width: 50vh;
-  aspect-ratio: 3/5;
-  background-color: #303030;
+.main {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
+  height: 80vh;
+  aspect-ratio: 5/4;
+  background: url(../images/4841276.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 80vh;
+  aspect-ratio: 3/5;
+  background-color: transparent;
 }
 /* 506 683*/
 .bottom-place {
@@ -30,14 +40,24 @@ body {
 }
 
 .slide-game {
+  position: absolute;
   height: 100%;
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
   overflow: hidden;
 }
 
+.ic {
+  width: 10vh;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+}
+
 .letter {
+  text-align: center;
+  width: 10vh;
+  height: 100%;
   color: #fff;
   position: relative;
   bottom: 10vh;
@@ -45,15 +65,20 @@ body {
 }
 
 .letter-anim {
-  animation: top-to-bot 1.5s linear;
+  animation: top-to-bot 2.5s linear;
+}
+
+.letter-fast-anim {
+  animation: top-to-bot 1s linear;
 }
 
 .life-place, .win-place {
   padding: 2vh;
   display: flex;
   position: absolute;
-  left: 50%;
+  top: 50%;
   transform: translate(-50%,-50%);
+  transform: rotate(90deg);
 }
 
 .win-place {
@@ -61,6 +86,7 @@ body {
 }
 
 .life-place div, .win-place div {
+  box-shadow: 0px 0px 18px 2px #000000;
   border-radius: 100%;
   margin: 1vh;
   width: 4vh;
@@ -76,11 +102,11 @@ body {
 }
 
 .life-place {
-  top: 93%;
+  left: 0;
 }
 
 .win-place {
-  top: 98%;
+  left: 70%;
 }
 
 
