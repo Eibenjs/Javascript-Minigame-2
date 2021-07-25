@@ -1,10 +1,3 @@
-// Buradaki ayarlardan sadece letter ı değiştirebilirsiniz.
-// Diğer ayarlara pls dokunmayın. Can ile maxwini değiştirecekseniz index.html deki divleri ayarlamanız gerekmekte. Koda yazsaydım kod kalabalığı olurdu ondan siz elinizle yapın.
-// Dipnot: spamGuard ın false olması spam koruması yok demek değil o sürekli var. spamGuard sadece tuşa bir defa basıldığı anda true oluyor o yüzden şu an false elleşmeyin ona.
-// Discord Eiben#4325
-// Github Eiben
-// Steam /naeiben
-
 let letter = ["A", "S", "D"],
   life = 3,
   win = 0,
